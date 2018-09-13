@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragmentdreamlist_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--ScollView用来显示不规则 并且长度多于屏幕的内容 ListView用来显示规则列表内容-->
+    <!--RecycleView是ListView的升级版-->
+
+    <!--SwipeRefreshLayout上拉下拉刷新 start-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/fragmentdreamlist_swiperefreshlo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragmentdreamlist_recyclerview"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <!--SwipeRefreshLayout end-->
+</RelativeLayout>

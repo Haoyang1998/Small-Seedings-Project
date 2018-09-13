@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--SwipeRefreshLayout start-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/fragmentlife_swiperefreshlo"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+        <!--RecyclerView start-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragmentlife_recyclerview"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <!--新闻组件 start 通过适配器添加-->
+            <!--新闻组件 end 通过适配器添加-->
+
+        </android.support.v7.widget.RecyclerView>
+        <!--RecyclerView end-->
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <!--SwipeRefreshLayout end-->
+
+</RelativeLayout>

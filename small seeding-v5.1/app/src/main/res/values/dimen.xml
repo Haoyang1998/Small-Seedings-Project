@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--Default screen margins. per the Android Design guideliens-->
+    <dimen
+        name="mtrl_card_spacing"
+        tools:override="true">
+        10dp
+    </dimen>
+
+    <!--普通Toolbar高度 -->
+    <dimen name="usual_toolbar_height">40dp</dimen>
+    <!--Coordinator布局 扩展Toolbar高度-->
+    <dimen  name="tall_toolbar_height">300dp</dimen>
+
+    <!--可收缩工具栏参数 -->
+    <dimen name="shrine_toolbar_collapsed_height">40dp</dimen>
+    <dimen name="shrine_toolbar_image_offset_top">100dp</dimen>
+    <dimen name="shrine_toolbar_offset_start">100dp</dimen>
+
+    <!--返回箭头大小-->
+    <dimen name="back_arrow">24dp</dimen>
+
+    <!--工具栏标题大小 -->
+    <dimen name="toolbar_textsize">20sp</dimen>
+
+    <!--Tab布局高度-->
+    <dimen name="tab_height">42dp</dimen>
+
+    <!--首页ViewPager Height-->
+    <dimen name="mainpage_viewpager">250dp</dimen>
+    <dimen name="mainpage_gridview">90dp</dimen>
+    <dimen name="mainpage_dividerheight">8dp</dimen>
+    <dimen name="mainpage_diyheight">70dp</dimen>
+    <dimen name="mainpage_diyLargetextsize">17dp</dimen>
+    <dimen name="mainpage_diySmalltextsize">12dp</dimen>
+    <dimen name="mainpage_diyImgSize">50dp</dimen>
+    <dimen name="mainpage_vp_textSize">18dp</dimen>
+    <dimen name="mainpage_toolbar_shadow">8dp</dimen>
+
+    <!--寄语板-->
+    <dimen name="message_textsize">20dp</dimen>
+
+    <!--校园时讯-->
+    <dimen name="dividerLineHeight">1dp</dimen>
+</resources>

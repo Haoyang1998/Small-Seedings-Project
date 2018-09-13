@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/very_light_grey"
+    >
+
+    <!--下滑滚动内容 start-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/healthpage_appbarlo"
+        android:layout_height="256dp"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true">
+
+        <!--嵌套一层 CollapsingToolbarLayout start-->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/activityitemlifetip_colltoolbarlo"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <!--ImageView背景图片 start-->
+            <ImageView
+                android:id="@+id/activitylifetip_image"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.5"
+                />
+            <!--ImageView背景图片 end-->
+
+            <!--工具栏  start-->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/activitylifetipitem_toolbar"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                app:layout_collapseMode="pin"
+                app:title="Test"
+                >
+                <!-- 返回图标 start-->
+                <ImageView
+                    android:id="@+id/healthpage_back"
+                    android:layout_height="@dimen/back_arrow"
+                    android:layout_width="@dimen/back_arrow"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_back"
+                    android:onClick="onBack"
+                    />
+                <!--返回图标 end-->
+            </android.support.v7.widget.Toolbar>
+            <!--工具栏 end-->
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <!--嵌套一层 CollapsingToolbarLayout end-->
+    </android.support.design.widget.AppBarLayout>
+    <!-- 下滑滚动内容 end-->
+
+    <!-- 新闻内容 start-->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/activitylifetipitem_nestedsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- 正文 start -->
+        <TextView
+            android:id="@+id/activitylifetipitem_body"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            />
+        <!-- 正文 end -->
+    </android.support.v4.widget.NestedScrollView>
+    <!-- 新闻内容 end end-->
+
+</android.support.design.widget.CoordinatorLayout>

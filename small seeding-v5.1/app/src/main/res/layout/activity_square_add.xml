@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".square.add">
+    <TextView
+        android:id="@+id/square_bu_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="取消"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:clickable="true"
+        android:textSize="16sp"
+        />
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="160dp"
+        android:id="@+id/tl_square_add"
+        android:layout_height="@dimen/tab_height"
+        style="@style/Widget.Design.TabLayout"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        >
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tab_height"
+            android:text="动态"
+            android:clickable="false"
+            />
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tab_height"
+            android:text="树洞"
+            />
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/square_vp_add"
+        />
+</RelativeLayout>

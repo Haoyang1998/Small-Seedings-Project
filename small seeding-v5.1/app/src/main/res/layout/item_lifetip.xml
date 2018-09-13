@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:onClick="playNews">
+
+    <!-- 新闻图 start -->
+    <ImageView
+        android:id="@+id/itemlifetip_imageview"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/divider_color"/>
+    <!-- 新闻标图 end -->
+
+    <!-- 新闻标题 start-->
+    <TextView
+        android:id="@+id/itemlifetip_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/itemlifetip_imageview"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="标题" />
+    <!-- 新闻标题 end-->
+
+    <!-- 新闻来源 start -->
+    <TextView
+        android:id="@+id/itemlifetip_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/itemlifetip_imageview"
+        android:layout_toEndOf="@+id/itemlifetip_imageview"
+        android:layout_marginStart="20dp"
+        android:text="来源" />
+    <!-- 新闻来源 end-->
+
+    <!-- 时间 start -->
+    <TextView
+        android:id="@+id/itemlifetip_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/itemlifetip_imageview"
+        android:layout_toEndOf="@+id/itemlifetip_source"
+        android:layout_marginStart="20dp"
+        android:text="时间" />
+    <!-- 时间 end-->
+
+    <!-- 新闻newsId 设置为不可见 start -->
+    <TextView
+        android:id="@+id/itemlifetip_newsid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="新闻id" />
+    <!-- 新闻newsId 设置为不可见 end-->
+
+    <!-- 新闻图片 url 设置为不可见 start -->
+    <TextView
+        android:id="@+id/itemlifetip_newsimageurl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="新闻id" />
+    <!-- 新闻图片 url 设置为不可见 end-->
+
+</RelativeLayout>

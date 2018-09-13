@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <EditText
+        android:layout_width="366dp"
+        android:id="@+id/et_addt"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:background="@null"
+        android:hint="想说点什么" />
+
+    <Button
+        android:id="@+id/bu_addt_photos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="207dp"
+        android:drawableTop="@drawable/ic_photo"
+        android:padding="35dp"
+        android:text="拍照/视频" />
+
+    <ImageView
+        android:id="@+id/addt_iv_present"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/square_present_press"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="350dp"
+        android:onClick="onClick_present_addt"
+        android:clickable="true"
+        />
+    <Button
+        android:id="@+id/bu_addt_location"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginBottom="220dp"
+        android:layout_marginStart="24dp"
+        android:layout_below="@id/bu_addt_photos"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_location"
+        android:text="添加地点"
+        android:textColor="#ff3d00"
+        android:textSize="10dp" />
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:onClick="playVideo">
+
+    <!-- 视频列表组件 -->
+    <!-- 视频图 start -->
+    <ImageView
+        android:id="@+id/itemeducation_imageview"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/divider_color"/>
+    <!-- 视频图 end -->
+
+    <!-- 视频标题 start-->
+    <TextView
+        android:id="@+id/itemeducation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/itemeducation_imageview"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="标题" />
+    <!-- 视频标题 end-->
+
+    <!-- 视频来源 start -->
+    <TextView
+        android:id="@+id/education_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/itemeducation_imageview"
+        android:layout_toEndOf="@+id/itemeducation_imageview"
+        android:layout_marginStart="20dp"
+        android:text="来源" />
+    <!-- 视频来源 end-->
+
+    <!-- 时间 start -->
+    <TextView
+        android:id="@+id/itemeducation_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/itemeducation_imageview"
+        android:layout_toEndOf="@+id/education_source"
+        android:layout_marginStart="20dp"
+        android:text="时间" />
+    <!-- 时间 end-->
+
+    <!-- 视频链接 设置为不可见 start -->
+    <TextView
+        android:id="@+id/itemeducation_videourl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="视频链接" />
+    <!-- 视频链接 end-->
+
+    <!-- 首页图片 设置为不可见 start -->
+    <TextView
+        android:id="@+id/itemeducation_imageurl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="首页新闻图片链接" />
+    <!-- 首页图片 设置为不可见 end-->
+</RelativeLayout>

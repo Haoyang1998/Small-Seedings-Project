@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#ffab91</color>
+    <color name="colorPrimaryDark">#ff8a65</color>
+    <color name="colorAccent">#ff8a65</color>
+    <color name="mtrl_scrim_color" tools:override="true">
+        #FCFCFC
+    </color>
+    <color name="font_color">#050000</color>
+    <!--分割线颜色-->
+    <color name="divider_color">#e9e5e5</color>
+    <!--个人信息界面背景颜色-->
+    <color name="myinfopage_background">#c9cacf</color>
+    <color name="infobar_color">#ebebef</color>
+    <color name="infobar_color_pressed">#6f7070</color>
+    <color name="orange">#FF6B64</color>
+    <color name="white">#ffffff</color>
+
+    <!--主界面 -->
+    <color name="mainpage_line">#E9E5E5</color>
+    <!--愿望清单-->
+    <color name="cardview_text_blue">#4d73ff</color>
+    <color name="cardview_text_black">#212121</color>
+    <color name="gray">#d3d3d3</color>
+
+    <!--刘昊洋-->
+    <color name="colormenu">#fff9c4</color>
+    <color name="colorTitle">#e0f2f1</color>
+    <color name="colorBack">#b2ebf2</color>
+    <color name="common_background_color">#E8374A</color>
+
+    <!-- 姜文玉 CircularBarPager color-->
+    <color name="very_light_grey">#e4e7ed</color>
+    <color name="light_grey">#c4c9cc</color>
+    <color name="light_teal">#ff9bbbba</color>
+    <color name="colorSwipe">#e0e0e0</color>
+</resources>

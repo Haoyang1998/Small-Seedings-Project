@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_mcv"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@color/colorTitle"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <NumberPicker
+            android:id="@+id/numer_pick_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            />
+
+        <NumberPicker
+            android:id="@+id/numer_pick_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            />
+
+        <NumberPicker
+            android:id="@+id/numer_pick_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            />
+
+    </LinearLayout>
+<android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="220dp"
+    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/dialog_tiet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:hint="@string/dialog_hint" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/dialog_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:background="@color/colormenu"
+        android:text="@string/dialog_finish_button"
+        />
+    <Button
+        android:id="@+id/dialog_button_cancel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:background="@color/colormenu"
+        android:text="@string/dialog_cancel_button"
+        />
+
+
+</android.support.v7.widget.CardView>

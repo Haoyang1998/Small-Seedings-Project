@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">小禾苗</string>
+    <!--底部导航栏 title-->
+    <string name="bnb_home_title">首页</string>
+    <string name="bnb_square_title">广场</string>
+    <string name="bnb_parents_title">家长</string>
+    <string name="bnb_me_title">我</string>
+
+    <!--文本输入框-->
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+
+    <!-- Toolbar -->
+    <string name="toolbar_name">小禾苗</string>
+
+    <!--GridLayout布局文件图标-->
+    <string name="grid_board">寄语板</string>
+    <string name="grid_security">安全</string>
+    <string name="grid_health">健康</string>
+    <string name="grid_wish">愿望清单</string>
+    <string name="grid_education">教育平台</string>
+    <string name="grid_life">生活贴士</string>
+    <string name="grid_school">校园时讯</string>
+    <string name="grid_help">个人求助</string>
+
+    <!--个人中心布局文件-->
+    <string name="myinfo_title">我的信息</string>
+    <string name="myinfo_settings">设置中心</string>
+    <string name="myinfo_relatedaccount">关联账号</string>
+    <string name="myinfo_collection">收藏</string>
+
+    <string name="myinfo_version">版本中心</string>
+    <string name="myinfo_about">关于</string>
+
+    <string name="infobar_username">小禾苗</string>
+    <string name="infobar_phone">Phone: 15950513866</string>
+
+    <!--Tab布局-->
+    <string name="education_attention">关注</string>
+    <string name="education_recommendation">推荐</string>
+    <string name="education_my">我的</string>
+    <string name="tips_life">生活</string>
+    <string name="tips_school">校园</string>
+    <string name="tips_walking">出行</string>
+
+
+    <!--孙国钦-->
+    <!--activity_dream_list.xml-->
+    <string name="dreamlist">"愿望清单"</string>
+
+    <!--activity_life_helper.xml-->
+    <string name="lifehelper">"生活贴士"</string>
+    <string name="life">"生活"</string>
+    <string name="school">"校园"</string>
+    <string name="out">"出行"</string>
+
+    <!--activity_message.xml-->
+    <string name="message_block">"寄语板"</string>
+    <string name="father_word">"好好学习，树立远大理想！"</string>
+    <string name="mother_word">"要听爷爷奶奶的话，多穿衣服别感冒了，妈妈下个月就回来啦！"</string>
+    <string name="friend_word">"周末我们一起出去玩吧！"</string>
+    <string name="teacher_word">"最近成绩有提高，希望你继续加油！"</string>
+
+    <!--activity_real_main-->
+    <string name="mainpage_title">"小禾苗"</string>
+    <string name="school_news">"校园时讯"</string>
+    <string name="school_news_content">"在这里写下你的校园故事吧！"</string>
+    <string name="safe_menu">"安全界面"</string>
+    <string name="safe_menu_content">"把你身边潜在的危险提供给我们！"</string>
+    <string name="life_menu">"生活贴士"</string>
+    <string name="life_menu_content">"我们将呵护你的每一天！"</string>
+    <string name="health_menu">"我的健康"</string>
+    <string name="health_menu_content">"关注健康，从今天开始！"</string>
+    <string name="dream_menu">"愿望清单"</string>
+    <string name="dream_menu_content">"快来这里许下你的心愿吧！"</string>
+    <string name="sos_menu">"个人求助"</string>
+    <string name="sos_menu_content">"如果你遇到危险，我们可以帮助你！"</string>
+    <string name="message_menu">"寄语板"</string>
+    <string name="message_menu_content">"这里有老师，家长想对你说的话！"</string>
+    <string name="education_menu">"教育平台"</string>
+    <string name="education_menu_content">"来畅游知识的海洋吧！"</string>
+
+    <!--layout_linear_item.xml-->
+    <string name="card1_text">"至善校园讲解团"</string>
+    <string name="school_activity">"校园活动"</string>
+    <string name="time_activity">"活动时间: 2018-8-25"</string>
+    <string name="place_activity">"活动地点: 计算机软件楼242"</string>
+    <string name="lianjie_activity">"迎新校园讲解活动，点击链接查看详情"</string>
+    <string name="xiangqing_activity">"查看详情"</string>
+
+    <!--layout_linear_item2.xml-->
+    <string name="card2_text">"校庆专场|Song Embrace Us音乐会"</string>
+    <string name="time2_activity">"活动时间: 2018-8-25到2018-8-33"</string>
+    <string name="place2_activity">"活动地点: 大学生活动中心一楼"</string>
+    <string name="lianjie2_activity">"何其有幸，青春年华有歌相拥"</string>
+
+    <!--layout_linear_item3.xml-->
+    <string name="card3_text">"赴日交流项目"</string>
+    <string name="broad_activity">"出国留学"</string>
+    <string name="time3_activity">"活动时间: 2018-9-01"</string>
+    <string name="place3_activity">"活动地点: 焦廷标馆"</string>
+    <string name="lianjie3_activity">"我的人生，就是一场旅途"</string>
+
+    <!--刘昊洋-->
+    <string name="toolbar_map">地图</string>
+    <string name="calendar_cv_bt113">添加提醒</string>
+    <string name="dialog_hint">提醒事项</string>
+    <string name="dialog_finish_button">完成</string>
+    <string name="dialog_cancel_button">取消</string>
+    <string name="mom_location">母亲位置</string>
+    <string name="mom_name">妈妈</string>
+    <string name="mom_phone">13627867863</string>
+    <string name="dad_location">父亲位置</string>
+    <string name="dad_name">爸爸</string>
+    <string name="dad_phone">17235656742</string>
+    <string name="parent_title">家长</string>
+    <string name="calendar_title">日程表</string>
+    <string name="parent_calendar">日程表</string>
+    <string name="calendar_add">添加提醒</string>
+    <string name="tv_but">hello</string>
+    <string name="personal_ass_mine_title">我的求助</string>
+    <string name="personal_ass_title">个人求助</string>
+    <string name="personal_ass_tv_title">标题</string>
+    <string name="personal_ass_type">类型</string>
+    <string name="personal_ass_me">我的身份</string>
+    <string name="personal_ass_con">求助内容</string>
+    <string name="personal_ass_send_ass">发送求助</string>
+    <string name="personal_ass_kid">儿童</string>
+    <string name="personal_ass_mine">我的求助</string>
+    <string name="fragment_done_but">已解决</string>
+    <string name="fragment_not_but">未解决</string>
+    <string name="personal_ass_mine_add">添加</string>
+</resources>

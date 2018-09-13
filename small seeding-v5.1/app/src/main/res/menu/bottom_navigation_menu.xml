@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bnv">
+    <item
+        android:id="@+id/bnv_start"
+        android:icon="@drawable/ic_homepage"
+        android:orderInCategory="1"
+        android:title="@string/bnb_home_title" />
+    <item
+        android:id="@+id/bnv_square"
+        android:icon="@drawable/ic_square"
+        android:orderInCategory="2"
+        android:title="@string/bnb_square_title"/>
+    <item
+        android:id="@+id/bnv_parent"
+        android:icon="@drawable/ic_family"
+        android:orderInCategory="3"
+        android:title="@string/bnb_parents_title"/>
+    <item
+        android:id="@+id/bnv_myinfo"
+        android:icon="@drawable/ic_me"
+        android:orderInCategory="4"
+        android:title="@string/bnb_me_title"/>
+</menu>

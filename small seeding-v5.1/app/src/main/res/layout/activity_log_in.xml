@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LogIn">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="3dp">
+
+        <Button
+            android:id="@+id/but_1"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@id/til_key"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/button_press"
+            android:onClick="onClick_login"
+            android:text="马 上 登 录"
+            android:textColor="#ffffff"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/tv_su"
+            android:layout_marginStart="100dp"
+            android:text="还  没  有  账  户 ?" />
+
+        <TextView
+            android:id="@+id/tv_su"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginEnd="120dp"
+            android:onClick="onClick_register"
+            android:text="马 上 注 册"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_bottom_line"
+            android:layout_alignBottom="@id/tv_su"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_user"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="330dp"
+            android:paddingLeft="5dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tel_user"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableLeft="@drawable/ic_username"
+                android:drawablePadding="5dp"
+                android:hint="用户名"
+                android:inputType="textPersonName"
+                android:paddingBottom="8dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="8dp"
+                android:textSize="16sp"
+                android:typeface="serif" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_key"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignTop="@id/til_user"
+            android:layout_marginTop="70dp"
+            android:paddingLeft="5dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tel_key"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableLeft="@drawable/ic_key"
+                android:drawablePadding="5dp"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:paddingBottom="8dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="8dp"
+                android:textSize="16sp"
+                android:typeface="serif" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

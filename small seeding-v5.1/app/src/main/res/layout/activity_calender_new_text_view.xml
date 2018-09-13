@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:cardElevation="10dp"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="#FFFFFF"
+        android:paddingRight="10dp"
+        android:textSize="20sp"
+        android:text="@string/tv_but"
+        android:id="@+id/but3"/>
+    <TextView
+        android:id="@+id/item_delete"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="#e51c23"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#55000000" />
+
+</LinearLayout>

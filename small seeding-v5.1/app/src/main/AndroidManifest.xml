@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.seuchild.smallseedling">
+
+    <application
+        android:name=".SmallSeedlingApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--定位-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="4FgH95CG5YhgZXwd03kcAt0Pg4EcFKzo" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <!-- 主界面 -->
+        <activity android:name=".StartActivity" />
+        <activity android:name=".myInfo.MyInfoActivity" />
+        <activity android:name=".startDirect.DirectActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".startDirect.InitialActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name=".dreamlist.DreamListActivity" />
+        <activity
+            android:name=".startDirect.PreviewActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name=".message.MessageActivity" />
+        <activity android:name=".square.SquareActivity" />
+        <activity android:name=".dreamlist.DreamActivity"/>
+        <activity android:name=".education.EducationActivity" />
+        <activity android:name=".health.HealthActivity" />
+        <activity android:name=".lifetip.LifeTipActivity" />
+        <activity android:name=".square.add" />
+        <activity android:name=".login.LogIn" />
+        <activity android:name=".login.Register"/>
+        <activity android:name=".map.MapActivity" />
+        <activity android:name=".parent.ParentActivity" />
+        <activity android:name=".calendar.CalendarActivity" />
+        <activity android:name=".schoolnews.SchoolNewsActivity" />
+        <activity android:name=".personalass.PersonalASSActivity" />
+        <activity android:name=".personalass.MyASSActivity" />
+
+        <!-- 视频播放组件 -->
+        <activity
+            android:name=".education.EducationVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 新闻组件 -->
+        <activity android:name=".lifetip.LifeTipItemActivity" />
+    </application>
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+</manifest>

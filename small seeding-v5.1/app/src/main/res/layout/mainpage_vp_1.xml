@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/imageMain1"
+        android:layout_width="375dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        app:cardElevation="13dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/main1" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/mainpage_vp_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageMain1"
+        android:gravity="center"
+        android:text="计算机科学与工程学院"
+        android:textSize="@dimen/mainpage_vp_textSize"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/cardview_text_black"
+        />
+</RelativeLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/very_light_grey"
+    >
+
+    <!--工具栏  start-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/healthpage_toolbar"
+        android:layout_height="@dimen/usual_toolbar_height"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:title=""
+        >
+
+        <!-- 返回图标 start-->
+        <ImageView
+            android:id="@+id/healthpage_back"
+            android:layout_height="@dimen/back_arrow"
+            android:layout_width="@dimen/back_arrow"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_back"
+            android:onClick="onBack"
+            />
+        <!--返回图标 end-->
+
+        <!-- 健康标题 start-->
+        <TextView
+            android:id="@+id/healthpage_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/font_color"
+            android:text="@string/grid_health"
+            android:textSize="@dimen/toolbar_textsize" />
+        <!-- 健康标题 end-->
+    </android.support.v7.widget.Toolbar>
+    <!--工具栏 end-->
+
+    <!-- 主题内容  start -->
+    <RelativeLayout
+        android:id="@+id/healthpage_relativelo"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="90dp"
+        android:layout_gravity="center"
+        android:background="@color/very_light_grey">
+
+        <!-- 圆形进度条 start-->
+        <devlight.io.library.ArcProgressStackView
+            android:id="@+id/healthpage_apsv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:apsv_rounded="false"
+            app:apsv_shadowed="true"
+            app:apsv_animated="true"
+            app:apsv_dragged="false"
+            app:apsv_leveled="true"
+            app:apsv_typeface="fonts/agency.ttf"
+            app:apsv_text_color="@color/font_color"
+            app:apsv_shadow_distance="1dp"
+            app:apsv_shadow_angle="90"
+            app:apsv_shadow_radius="10dp"
+            app:apsv_shadow_color="@color/divider_color"
+            app:apsv_animation_duration="3000"
+            app:apsv_draw_width="75%"
+            app:apsv_model_offset="1dp"
+            app:apsv_model_bg_enabled="false"
+            app:apsv_start_angle="270"
+            app:apsv_sweep_angle="360"
+            app:apsv_indicator_orientation="vertical"
+            app:apsv_preview_colors="@color/light_grey"
+            app:apsv_preview_bg="#007799"
+            />
+        <!-- 圆形进度条 end-->
+
+    </RelativeLayout>
+    <!-- 主题内容 end -->
+
+    <!-- BottomSheet start-->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/healthpage_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_peekHeight="56dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <!--  BottomSheet 内容 start-->
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/healthpage_bottomsheetrelativelo"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <!-- Bottom sheet 标题 start -->
+            <ImageView
+                android:id="@+id/healthpage_relativeloimageview"
+                android:layout_width="42dp"
+                android:layout_height="56dp"
+                android:background="@color/colorPrimary"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/arrow_up"/>
+            <!-- Bottom sheet 标题 end -->
+
+            <!-- 波浪图形进度条 start-->
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/healthpage_waveLoadingView"
+                android:layout_height="200dp"
+                android:layout_width="200dp"
+                android:layout_below="@+id/healthpage_relativeloimageview"
+                android:layout_centerHorizontal="true"
+                app:wlv_borderColor="@color/font_color"
+                app:wlv_borderWidth="3dp"
+                app:wlv_progressValue="40"
+                app:wlv_shapeType="circle"
+                app:wlv_round_rectangle="true"
+                app:wlv_triangle_direction="north"
+                app:wlv_titleCenterStrokeColor="@android:color/holo_blue_dark"
+                app:wlv_titleCenterStrokeWidth="3dp"
+                app:wlv_titleCenter="40%"
+                app:wlv_titleCenterColor="@android:color/white"
+                app:wlv_titleCenterSize="24sp"
+                app:wlv_waveAmplitude="70"
+                app:wlv_waveColor="@color/colorPrimaryDark"
+                />
+            <!-- 波浪图形进度条 end-->
+
+            <!-- 线性进度条 start-->
+            <!--有氧运动时长 start-->
+            <com.app.progresviews.ProgressLine
+                android:id="@+id/healthpage_sporttime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/healthpage_waveLoadingView"
+                app:definition="有氧运动时长"
+                app:value="10,000"
+                app:lineBarWidth="7dp"
+                app:valuePercentage="90"
+                app:valueDefTextSize="20sp"
+                app:lineProgressColor="#00FFFF"
+                app:underLineColor="@android:color/darker_gray"
+                />
+            <!--有氧运动时长 end-->
+
+            <!--心率 start-->
+            <com.app.progresviews.ProgressLine
+                android:id="@+id/healthpage_heartrate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/healthpage_sporttime"
+                app:definition="心率"
+                app:value="70"
+                app:lineBarWidth="7dp"
+                app:valuePercentage="55"
+                app:valueDefTextSize="20sp"
+                app:lineProgressColor="#CC0000"
+                app:underLineColor="@android:color/darker_gray"
+                />
+            <!--心率 end-->
+
+            <!--睡眠 start-->
+            <com.app.progresviews.ProgressLine
+                android:id="@+id/healthpage_sleep"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/healthpage_heartrate"
+                app:definition="睡眠时长"
+                app:value="7"
+                app:lineBarWidth="7dp"
+                app:valuePercentage="70"
+                app:valueDefTextSize="20sp"
+                app:lineProgressColor="#FFFF00"
+                app:underLineColor="@android:color/darker_gray"
+                />
+            <!--睡眠 end-->
+
+            <!--饮食 start-->
+            <com.app.progresviews.ProgressLine
+                android:id="@+id/healthpage_eat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/healthpage_sleep"
+                app:definition="饮食"
+                app:value="90"
+                app:lineBarWidth="7dp"
+                app:valuePercentage="90"
+                app:valueDefTextSize="20sp"
+                app:lineProgressColor="#CCDDFF"
+                app:underLineColor="@android:color/darker_gray"
+                />
+            <!--饮食 end-->
+
+            <!--我的健康 start-->
+            <com.app.progresviews.ProgressLine
+                android:id="@+id/progress_line"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/healthpage_eat"
+                app:definition="健康指数"
+                app:value="85"
+                app:lineBarWidth="7dp"
+                app:valuePercentage="85"
+                app:valueDefTextSize="20sp"
+                app:lineProgressColor="#FF0088"
+                app:underLineColor="@android:color/darker_gray"
+                />
+            <!--我的健康 end-->
+            <!-- 线性进度条 end-->
+    </RelativeLayout>
+    <!--  BottomSheet 内容 end-->
+    </android.support.v4.widget.NestedScrollView>
+    <!-- Bottom Sheet end-->
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/dreamBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryDark"
+        app:titleTextColor="@color/white"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:text="许愿池"
+            android:textSize="9pt"
+            android:textColor="#333333"
+            android:layout_gravity="center"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ru.github.igla.ferriswheel.FerrisWheelView
+        android:id="@+id/ferrisWheelView"
+        android:layout_below="@+id/dreamBar"
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        app:fwv_cabinsNumber="8"
+        app:fwv_rotateSpeed="6"
+        />
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ferrisWheelView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="在这里许下你的心愿吧！"
+        android:textColor="#ffa726"
+        android:gravity="center"
+        android:textSize="25dp"/>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:id="@+id/TextField"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:mtf_labelColor="#ffa726"
+        android:layout_marginLeft="50dp"
+        >
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="你的愿望"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <Button
+        android:id="@+id/button_dream"
+        android:layout_below="@+id/TextField"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/wish_btn"
+        android:text="许下心愿"
+        android:textColor="@color/orange"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

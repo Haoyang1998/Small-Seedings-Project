@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ass_rela"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/personal_ass_mine_abl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryDark"
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/personal_ass_mine_tb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Base.Widget.AppCompat.Toolbar"
+            >
+            <TextView
+                android:id="@+id/personal_ass_mine_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/personal_ass_mine_title"
+                android:textSize="9pt"
+                android:textColor="#333333"
+                />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/fragment_tbl"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/personal_ass_mine_abl"
+        android:foregroundGravity="center"
+        >
+
+    </android.support.design.widget.TabLayout>
+
+    <LinearLayout
+        android:id="@+id/ass_linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="528dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fragment_tbl">
+
+    </LinearLayout>
+
+
+</RelativeLayout>
